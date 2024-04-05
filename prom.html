@@ -1,0 +1,34 @@
+<html>
+
+<script>
+
+var letras = ['T','R','W','A', 'G','M','Y', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T']
+
+
+ var  numero = prompt('Dame un numero del dni?');
+ var letras =  prompt('Dame una letra?')
+
+ letras.toUpperCase();
+
+ if(numero < 0 || numero > 999999){
+    alert("El numero que proporcionas no es valido")
+
+ }
+ else{
+ var Calcularletra = letras  [numero % 3];
+ if(Calcularletra != letra){
+    alert("La letra o el numero proporcionados no es correcto");
+ }else{
+
+    alert("El numero Dni y sus letras son correctos")
+    }
+}
+
+
+
+</script>
+
+<body>
+
+</body>
+</html>
